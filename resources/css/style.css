@@ -130,3 +130,16 @@ footer {
         text-decoration: none;
         color: black;
     }
+
+    @media only screen and (max-width: 559px) {
+        .navfooter {
+            display: none;
+        }
+        .textfooter {
+            margin-top: 24px;
+            padding: 16px;
+        }
+        .footer {
+            height: 72px;
+        }
+    }
