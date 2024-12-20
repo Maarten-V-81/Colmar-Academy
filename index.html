@@ -8,16 +8,19 @@
 </head>
 
 <header id="header">
-    <div class="logo">
+
+    <!-- Desktop header-->
+    <div id="header-desktop">
+        <div class="logo-desktop">
         <img src="./resources/images/ic-logo.svg" alt="colmar academy logo" />
         <span class="blacklogo">COLMAR</span><span class="greylogo">ACADEMY</span>
         </div>
         <nav>
             <div id="navbar">
-                <div class="navitems">
+                <div class="navitems-desktop">
                     <span><a href="#oncampus">On Campus</a></span>
                     <span class="devider">&nbsp;</span>
-                    <span></span><a href="#online">Online</a></span>
+                    <span><a href="#online">Online</a></span>
                     <span class="devider">&nbsp;</span>
                     <span><a href="#forcompanies">For Companies</a></span>
                     <span class="devider">&nbsp;</span>
@@ -26,6 +29,17 @@
             </div>
         </nav>
     </div>
+
+    <!--Mobile header-->
+    <div id="header-mobile">
+            <div class="navitems-mobile">
+                    <a href="index.html"><img src="./resources/images/ic-logo.svg" alt="colmar academy logo" /></a>
+                    <a href="#oncampus"><img src="./resources/images/ic-on-campus.svg" alt="campus section button" /></a>
+                    <a href="#online"><img src="./resources/images/ic-online.svg" alt="online courses button" /></a>
+                    <a href="#signin"><img src="./resources/images/ic-login.svg" alt="login button" /></a>
+            </div>
+    </div> 
+
 </header>
 
 <body>
@@ -69,8 +83,8 @@
 
     <p class="textfooter">&#169 2016 Colmar Academy. All Rights reserved</p>
     <div class="navfooter">
-        <span>Terms</span>
-        <span>Privacy</span>
+        <span><a href="">Terms</a></span>
+        <span><a href="">Privacy</a></span>
     <div>
 </footer>
 

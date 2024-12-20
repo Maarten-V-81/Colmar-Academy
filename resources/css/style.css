@@ -6,18 +6,18 @@
 
 /* header section */
 
-#header {
+#header-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
     background-color: white;
 }
-.logo {
+.logo-desktop {
     display: flex;
     align-items: center;
 }
-.logo img {
+.logo-desktop img {
         display: flex;
         height: 32px;
         margin-left: 24px;
@@ -28,7 +28,7 @@
     .greylogo {
         color: gray;
     }
-    .navitems {
+    .navitems-desktop {
     display: flex;
     align-items: center;
     margin-right: 24px;
@@ -47,8 +47,32 @@
         color: black;
     }
 
-body {
 
+    /* header mobile */
+
+    #header-mobile {
+        height: 64px;
+        background-color: white;
+        padding: 0 24px; 
+    }
+
+    .navitems-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+ @media only screen and (max-width: 559px) {
+        #header-desktop { display: none;
+         }
+ }
+@media only screen and (min-width: 560px) {
+     #header-mobile { display: none;
+     }
+ }
+
+body {
 /* section 1 */
 
     #start {
@@ -76,6 +100,7 @@ body {
         background-color: white;
         height: 500px;
     }
+}
 
 footer {
     display: flex;
@@ -91,11 +116,17 @@ footer {
     align-items: start;
     padding: 16px 0 0 24px;
 }
+
 .navfooter {
     display: flex;
     align-items: start;
     padding: 16px 24px 0 0; 
-    span {
-        padding: 0 10px;
-    } 
 }
+    .navfooter span {
+        padding: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
