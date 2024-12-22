@@ -45,6 +45,14 @@ html {
     align-items: center;
     margin-right: 24px;
     }
+
+    .navitems-desktop a {
+        transition: color 1s ease-in-out 0;
+    }
+    
+    .navitems-desktop a:hover {
+        color:blue;
+    }
     
     .devider{
             display: border-box;
@@ -273,6 +281,18 @@ body {
     padding: 8px 0;
 }
 
+.written-content h3 {
+    transition: color, font-size;
+    transition-duration:  350ms;
+    transition-timing-function:  ease-in-out;
+    transition-delay:  0;
+}
+
+.written-content h3:hover {
+    color:blue;
+    font-size: 20px;
+}
+
 
 /* section 4 */
 
@@ -359,6 +379,17 @@ body {
     align-items: left;
 }
 
+.written-content2 h3 {
+    transition: color, font-size;
+    transition-duration:  350ms;
+    transition-timing-function:  ease-in-out;
+    transition-delay:  0;
+}
+
+.written-content2 h3:hover {
+    color:blue;
+    font-size: 20px;
+}
 
 /* footer */
 
@@ -381,6 +412,15 @@ footer {
     align-items: start;
     padding: 16px 24px 0 0; 
 }
+
+.navfooter a {
+    transition: color 1s ease-in-out 0;
+}
+
+.navfooter a:hover {
+    color:blue;
+}
+
     .navfooter span {
         padding: 0 10px;
     }
