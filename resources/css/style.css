@@ -4,7 +4,6 @@
 }
 
 html {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 
@@ -47,7 +46,7 @@ html {
     }
 
     .navitems-desktop a {
-        transition: color 1s ease-in-out 0;
+        transition: color 1s ease-in-out 0s;
     }
     
     .navitems-desktop a:hover {
@@ -55,7 +54,6 @@ html {
     }
     
     .devider{
-            display: border-box;
             background-color: turquoise;
             width: 17px;
             height: 64px;
@@ -92,11 +90,10 @@ html {
      }
     }
 
-body {
    
 /* section 1 */
 
-    #start {
+    #start-here {
     background-color:lightgrey;
     height: auto;
     display: flex;
@@ -121,17 +118,14 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: start;
         width: 40%;
-        box-sizing: border-box;
     }
 
     .written-content5 {
         width: 60%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
         p {
             padding: 24px 0;
         }
@@ -143,6 +137,11 @@ body {
         padding: 8px 0;
         width: 100%;
         font-size: larger;
+        transition: background-color 300ms ease-in 0s;
+    }
+
+    .button1:hover {
+        background-color: blue;
     }
 
 /* section 2 */
@@ -152,27 +151,27 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
+    
     }
 
     .leftside-container2 {
         display: flex;
         flex-direction: column;
         width: 60%;
+        padding: 32px 24px;
     }
 
     .leftside-container2 img {
         max-width: 100%;
         height: auto;
-        padding: 32px 24px;
     }
 
     .written-content3 {
         display: flex;
         flex-direction: column;
         width: 60%;
-        padding-left: 24px;
         h2 {
-            padding-bottom: 24px;
+            padding: 24px 0;
         }
         .color2 {
             color: rgb(83, 83, 83);
@@ -180,7 +179,6 @@ body {
     }
 
     .reference {
-            padding-bottom: 32px;
             padding-top: 24px;
             font-size: 14px;
     }
@@ -219,6 +217,11 @@ body {
     }
 
     .written-content4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 65%;
         h3 {
             padding-bottom: 8px;
         }
@@ -229,11 +232,6 @@ body {
             padding-top: 8px;
             color: blue;
         }
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 65%;
     }
 
 
@@ -285,7 +283,7 @@ body {
     transition: color, font-size;
     transition-duration:  350ms;
     transition-timing-function:  ease-in-out;
-    transition-delay:  0;
+    transition-delay:  0s;
 }
 
 .written-content h3:hover {
@@ -302,11 +300,10 @@ body {
         border-bottom: 1px solid lightgrey;
     margin: 0 3px;
     }
-}
 
 .section4-banner {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     padding: 32px 0;
 }
 
@@ -368,22 +365,23 @@ body {
 
 .written-content2 {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     h3 {
         padding-bottom: 8px;
     }
     p { 
-        color: grey; } 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+        color: grey; 
+    } 
 }
 
 .written-content2 h3 {
     transition: color, font-size;
     transition-duration:  350ms;
     transition-timing-function:  ease-in-out;
-    transition-delay:  0;
+    transition-delay:  0s;
 }
 
 .written-content2 h3:hover {
@@ -414,7 +412,7 @@ footer {
 }
 
 .navfooter a {
-    transition: color 1s ease-in-out 0;
+    transition: color 1s ease-in-out 0s;
 }
 
 .navfooter a:hover {
