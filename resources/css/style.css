@@ -81,11 +81,11 @@ html {
         height: 100%;
     }
 
-    @media only screen and (max-width: 559px) {
+    @media only screen and (max-width: 619px) {
         #header-desktop { display: none;
          }
     }
-    @media only screen and (min-width: 560px) {
+    @media only screen and (min-width: 620px) {
      #header-mobile { display: none;
      }
     }
@@ -103,7 +103,7 @@ html {
 
     .leftside-container3 {
        display: flex;
-       justify-content: left;
+       justify-content: start;
        align-items: center;
        width: 60%;
        padding-right: 24px;
@@ -142,6 +142,46 @@ html {
 
     .button1:hover {
         background-color: blue;
+    }
+
+    @media only screen and (max-width: 619px) {
+        #start-here {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+        }
+    .leftside-container3 {
+        width: 100%;
+        padding: 0;
+    }
+    .leftside-container3 img {
+        width: 100%;
+        min-height: 375px;
+        min-height: 500px;
+    }
+    .rightside-container3 {
+       width: 100%;
+    }
+    .written-content5 {
+        padding: 32px 16px;
+        width: 100%;
+        box-sizing: border-box;
+        h1 { 
+            padding-bottom: 32px;
+        }
+        p {
+            padding: 0 0 24px 0;
+        }
+    }
+    }
+
+    @media only screen and (min-width: 620px) {
+        .leftside-container3 img {
+            width: 100%;
+            min-height: 375px;
+            min-height: 500px;
+        }
     }
 
 /* section 2 */
@@ -196,6 +236,12 @@ html {
         flex-direction: row;
     }
 
+    .info1 img {
+        padding: 16px 16px;
+        width: 35%;
+        height: auto;
+    }
+    
     .border {
         border-bottom: 1px solid lightgrey;
     }
@@ -206,11 +252,7 @@ html {
     }
 
 
-    .info1 img {
-        padding: 16px 16px;
-        width: 35%;
-        height: auto;
-    }
+   
 
     .background-info {
         background-color: lightgrey;
@@ -234,6 +276,41 @@ html {
         }
     }
 
+    @media only screen and (max-width: 619px) {
+        .leftside-container2 { display: none;
+         }
+         .rightside-container2 {
+            width: 100%;
+            padding: 16px 16px;
+            }
+        .border2 {
+            border-top: none;
+        }
+        .border {
+            border-bottom: none;
+            }
+        .background-info {
+            background-color: white;
+        }
+        .info1 {
+            display: flex;
+            flex-direction: column; 
+            border-bottom: 1px solid lightgrey;
+            h3 {
+                padding-top: 32px;
+            }
+            a {
+                padding-bottom: 32px;
+            }
+        }
+        .info1 img{
+            width: 100%;
+            max-height: 300px;
+            box-sizing: border-box;
+            padding: 0;
+    }
+}
+    
 
 /* section 3 */
 
@@ -289,6 +366,39 @@ html {
 .written-content h3:hover {
     color:blue;
     font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 619px) {
+    #online {
+    background-color: white;
+    }
+    .grid-container{
+        display: none;
+    }
+
+.section3-banner {
+    padding: 32px 0 16px 0;
+}
+
+.section-3-mobile {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 32px;
+    margin: 0 16px;    
+}
+.bckgrnd {
+    background-color: lightgrey;
+    margin: 8px 0;
+    h3{
+        padding: 16px 0 24px 16px;
+    }
+}
+}
+
+@media only screen and (min-width: 620px) {
+.section-3-mobile { display: none;
+ }
 }
 
 
@@ -389,6 +499,30 @@ html {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 619px) {
+    #forcompanies {
+        margin: 0;
+    }
+    .rightside-container {
+        display: none;
+    }
+    .section4-banner {
+        padding-bottom: 16px;
+    }
+    .thesisbody-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .leftside-container {
+        width: 100%;
+        padding: 0;
+    }
+    .textdiv-left {
+        display: none;
+    }
+}
+
 /* footer */
 
 footer {
@@ -428,7 +562,7 @@ footer {
         color: black;
     }
 
-    @media only screen and (max-width: 559px) {
+    @media only screen and (max-width: 619px) {
         .navfooter {
             display: none;
         }
