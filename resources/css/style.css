@@ -81,11 +81,11 @@ html {
         height: 100%;
     }
 
-    @media only screen and (max-width: 619px) {
+    @media only screen and (max-width: 886px) {
         #header-desktop { display: none;
          }
     }
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 887px) {
      #header-mobile { display: none;
      }
     }
@@ -144,7 +144,7 @@ html {
         background-color: blue;
     }
 
-    @media only screen and (max-width: 619px) {
+    @media only screen and (max-width: 886px) {
         #start-here {
             display: flex;
             flex-wrap: wrap;
@@ -176,7 +176,7 @@ html {
     }
     }
 
-    @media only screen and (min-width: 620px) {
+    @media only screen and (min-width: 887px) {
         .leftside-container3 img {
             width: 100%;
             min-height: 375px;
@@ -251,9 +251,6 @@ html {
         margin-top: 1px;
     }
 
-
-   
-
     .background-info {
         background-color: lightgrey;
     }
@@ -276,7 +273,7 @@ html {
         }
     }
 
-    @media only screen and (max-width: 619px) {
+    @media only screen and (max-width: 886px) {
         .leftside-container2 { display: none;
          }
          .rightside-container2 {
@@ -305,6 +302,8 @@ html {
         }
         .info1 img{
             width: 100%;
+            min-width: none;
+            max-width: 500px;
             max-height: 300px;
             box-sizing: border-box;
             padding: 0;
@@ -370,7 +369,7 @@ html {
 
 
 
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 886px) {
     #online {
     background-color: white;
     }
@@ -396,11 +395,10 @@ html {
 }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 887px) {
 .section-3-mobile { display: none;
  }
 }
-
 
 /* section 4 */
 
@@ -432,8 +430,9 @@ html {
 
 .leftside-container video {
     max-width: 100%;
-    height: auto;
+    min-height: 311px;
     padding-bottom: 24px;
+    object-fit: cover; 
 }
 
 .textdiv-left {
@@ -499,7 +498,7 @@ html {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 619px) {
+@media only screen and (max-width: 886px) {
     #forcompanies {
         margin: 0;
     }
@@ -562,7 +561,7 @@ footer {
         color: black;
     }
 
-    @media only screen and (max-width: 619px) {
+    @media only screen and (max-width: 886px) {
         .navfooter {
             display: none;
         }
